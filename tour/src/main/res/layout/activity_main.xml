@@ -1,0 +1,40 @@
+<!--?xml version=1.0 encoding=utf-8?-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dip"
+    android:background="@android:color/background_light">
+    <!-- 上边主页面 -->
+    <fragment
+        android:id="@+id/fragement_order"
+        android:name="com.datang.bright.tour.order.OrderFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:layout_centerInParent="true"
+        android:layout_weight="10" />
+
+    <fragment
+        android:id="@+id/fragement_home"
+        android:name="com.datang.bright.tour.home.HomeFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_weight="10" />
+
+    <fragment
+        android:id="@+id/fragement_me"
+        android:name="com.datang.bright.tour.me.MeFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_weight="10" />
+    <!-- 底部菜单页面 -->
+    <fragment
+        android:id="@+id/bottom_fragment"
+        android:name="com.datang.bright.tour.main.BottomFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1" />
+</RelativeLayout>

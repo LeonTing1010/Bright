@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/spot_bg"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_alignTop="@id/iv_back"
+            android:layout_alignBaseline="@id/iv_back"
+            android:id="@+id/tv_spot_title"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="黄果树瀑布"
+            android:textColor="@android:color/white"
+            android:textSize="16dip" />
+
+
+    </RelativeLayout>
+
+    <com.datang.bright.tour.widget.RatioImageView
+        android:src="@drawable/spot1_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/tv_spot_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_spot_star"
+            android:text="5A\n景区"
+            android:gravity="center"
+            android:textSize="14dip" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_toRightOf="@id/tv_spot_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="景点介绍"
+            android:textSize="20dip" />
+
+        <TextView
+            android:id="@+id/tv_spot_outline"
+            android:layout_toRightOf="@id/tv_spot_star"
+            android:layout_below="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="世界上最大的瀑布" />
+
+        <ImageView
+            android:id="@+id/iv_spot_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/spot_detail"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:layout_below="@id/tv_spot_star"
+            android:layout_toRightOf="@id/tv_spot_star"
+            android:layout_width="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_height="0.3dp"
+            android:background="@color/gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/loc_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loc_detail"
+            android:layout_margin="7dp" />
+
+        <TextView
+            android:id="@+id/tv_loc_detail"
+            android:layout_toRightOf="@id/loc_detail"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="贵州省安顺市黄果树风景名胜区" />
+
+        <ImageView
+            android:id="@+id/iv_loc_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/spot_detail"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp" />
+
+    </RelativeLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:background="@android:color/white"
+        android:id="@+id/lv_pull_spot_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#19000000"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        />
+
+</LinearLayout>

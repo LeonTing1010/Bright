@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@android:color/white"
+    android:gravity="bottom"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/menu_bt_order"
+        style="@style/bottom_menu"
+        android:layout_weight="1.0"
+        android:drawableTop="@drawable/bg_order_menu"
+        android:text="订单" />
+
+    <View
+        android:layout_margin="5dp"
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        />
+
+    <RadioButton
+        android:id="@+id/menu_bt_home"
+        style="@style/bottom_menu"
+        android:layout_weight="1.0"
+        android:checked="true"
+        android:drawableTop="@drawable/bg_home_menu"
+        android:text="主页" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_margin="5dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        />
+
+    <RadioButton
+        android:id="@+id/menu_bt_me"
+        style="@style/bottom_menu"
+        android:layout_weight="1.0"
+        android:drawableTop="@drawable/bg_me_menu"
+        android:text="个人中心" />
+
+</RadioGroup>

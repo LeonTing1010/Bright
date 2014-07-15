@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/menu_spot_filter"
+        style="@style/spot_bottom_menu"
+        android:checked="true"
+        android:drawableTop="@drawable/bg_spot_filter_menu"
+        android:text="筛选" />
+
+
+    <RadioButton
+        android:id="@+id/menu_spot_sort"
+        style="@style/spot_bottom_menu"
+        android:drawableTop="@drawable/bg_spot_sort_menu"
+        android:text="排序" />
+
+    <RadioButton
+        android:id="@+id/menu_spot_all"
+        style="@style/spot_bottom_menu"
+        android:drawableTop="@drawable/bg_spot_all_menu"
+        android:text="全部景点" />
+
+
+    <RadioButton
+        android:id="@+id/menu_spot_map"
+        style="@style/spot_bottom_menu"
+        android:drawableTop="@drawable/bg_spot_map_menu"
+        android:text="地图" />
+
+</RadioGroup>

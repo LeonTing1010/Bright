@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dip"
+    android:background="@color/spot_bg">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:id="@+id/ll_spot_title"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_alignTop="@id/iv_back"
+            android:layout_alignBaseline="@id/iv_back"
+            android:id="@+id/tv_spot_title"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="景点门票"
+            android:textColor="@android:color/white"
+            android:textSize="16dip" />
+
+        <Button
+            android:layout_alignLeft="@id/tv_spot_title"
+            android:layout_alignRight="@id/tv_spot_title"
+            android:layout_below="@id/tv_spot_title"
+            android:layout_margin="7dp"
+            android:textSize="16dip"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="贵州"
+            android:background="@android:color/white" />
+
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:layout_below="@id/ll_spot_title"
+        android:background="@android:color/white"
+        android:id="@+id/lv_pull_spot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#19000000"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+       />
+    <!-- 底部菜单页面 -->
+    <fragment
+        android:id="@+id/bottom_fragment"
+        android:name="com.datang.bright.tour.spot.BottomFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1" />
+
+</RelativeLayout>

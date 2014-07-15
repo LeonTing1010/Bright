@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <com.datang.bright.tour.widget.RatioImageView
+        android:layout_gravity="left"
+        android:id="@+id/iv_spot_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/spot1" />
+
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:paddingLeft="10dp"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_spot_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="黄果树风景名胜区" />
+
+        <TextView
+            android:textSize="10dip"
+            android:id="@+id/tv_spot_level"
+            android:layout_below="@id/tv_spot_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5A景区"  android:textColor="@color/spot_bg"/>
+
+        <TextView
+            android:textSize="10dip"
+            android:id="@+id/tv_spot_status"
+            android:layout_alignBaseline="@id/tv_spot_level"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/tv_spot_level"
+            android:layout_height="wrap_content"
+            android:text="|售卖中"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:textSize="10dip"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_spot_loc"
+            android:layout_below="@id/tv_spot_level"
+            android:drawableStart="@drawable/loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="贵州省安顺市黄果树风景名胜区" />
+
+        <ImageView
+            android:id="@+id/iv_spot_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/spot_detail"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_spot_detail"
+            android:id="@+id/tv_spot_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50元起"
+            android:textColor="@color/red" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_gravity="center_vertical" />
+
+</LinearLayout>

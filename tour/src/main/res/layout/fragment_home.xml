@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="0dp">
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_margin="0dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:padding="0dip"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_weight="1"
+        android:id="@+id/content"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <ImageView android:src="@drawable/hotel" android:id="@+id/iv_hotel" />
+
+            <ImageView android:src="@drawable/spot" android:id="@+id/iv_spot" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView android:src="@drawable/delicacy" android:id="@+id/iv_delicacy" />
+
+            <ImageView android:src="@drawable/rental" android:id="@+id/iv_rental" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

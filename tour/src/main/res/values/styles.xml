@@ -1,0 +1,57 @@
+<resources>
+
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="">-->
+    <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--</style>-->
+
+
+    <style name="bottom_menu">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+    </style>
+
+
+    <style name="spot_bottom_menu">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@color/spot_bg</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+    </style>
+    <style name="default_animation" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/push_top_in2</item>
+        <item name="android:activityOpenExitAnimation">@anim/hold</item>
+        <item name="android:activityCloseEnterAnimation">@anim/hold</item>
+        <item name="android:activityCloseExitAnimation">@anim/push_top_out2</item>
+    </style>
+
+    <style name="app_theme" parent="@android:style/Theme.Light">
+        <item name="android:windowAnimationStyle">@style/default_animation</item>
+        <item name="android:windowNoTitle">false</item>
+    </style>
+    <style name="app_theme_notitle" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/default_animation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+</resources>
