@@ -223,7 +223,7 @@
                 android:layout_toRightOf="@id/ticket_user"
                 android:layout_centerVertical="true"
                 android:id="@+id/et_ticket_user"
-                android:layout_width="180dp"
+                android:layout_width="150dp"
                 android:textSize="12dip"
                 android:layout_height="wrap_content"
                 android:hint="请填写准确的联系人"
@@ -255,7 +255,7 @@
 
 
         <RelativeLayout
-            android:layout_margin="2dp"
+            android:layout_marginLeft="2dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -274,7 +274,7 @@
                 android:layout_alignBaseline="@id/ticket_user_phone"
                 android:layout_toRightOf="@id/ticket_user_phone"
                 android:id="@+id/et_ticket_user_phone"
-                android:layout_width="180dp"
+                android:layout_width="150dp"
                 android:textSize="12dip"
                 android:layout_height="wrap_content"
                 android:hint="用于接受入园凭证短信"
@@ -284,7 +284,6 @@
             <TextView
                 android:layout_marginLeft="15dp"
                 android:layout_below="@id/et_ticket_user_phone"
-
                 android:layout_width="match_parent"
                 android:layout_height="0.5dp"
                 android:background="@color/spot_bg" />
@@ -308,6 +307,7 @@
                 android:textColor="@color/spot_bg" />
 
             <TextView
+                android:padding="0dip"
                 android:layout_weight="1"
                 android:id="@+id/tv_submit_ticket"
                 android:gravity="center"
