@@ -1,4 +1,9 @@
 Bright
 ======
 
-智慧旅游
+Smart travel is a way of utilizing high-tech technology to drive people's travel, aiming to improve travel experience and efficiency. Smart travel uses technologies such as intelligent robots, virtual reality technology, big data analysis and artificial intelligence to help travelers more easily and quickly plan trips, purchase tickets, customize accommodation and other services, and also helps travelers conduct real-time route planning, intelligent navigation and positioning, thus making travel easier and faster, and improving travel experience. In addition, smart travel can also help travelers identify scenic spots and provide real-time information services with the help of related devices, so as to improve the efficiency of travel.
+
+Smart travel can also provide features such as intelligent voice assistant, real-time positioning service, multimedia terminal, etc., to help travelers better find relevant information and improve travel experience. It can also provide real-time safety reminders to help travelers complete their travel quickly and safely. Through intelligent robots, machine learning and deep learning, smart travel can provide more personalized services according to travelers' interests and needs, helping travelers better explore tourist attractions and complete their travel more easily.
+
+
+The Android version of the Smart Travel app provides a range of features to make travel easier and faster, while enhancing the travel experience. It supports real-time route planning, intelligent navigation and positioning functions, helping users quickly and accurately plan their trips, with real-time safety reminders. It also supports intelligent voice assistants, multimedia terminals and other functions, which can help users get real-time information quickly, as well as provide personalized services according to users' travel interests and requirements, making travel easier for users.
